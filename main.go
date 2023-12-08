@@ -23,7 +23,5 @@ func main() {
 	defer resp.Body.Close()
 	body, _ := io.ReadAll(resp.Body)
 
-	data := {}
-  json.Unmarshal([]byte(s), &data)
 	fmt.Printf(string(body))
 }
